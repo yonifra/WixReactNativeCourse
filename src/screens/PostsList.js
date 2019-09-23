@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {FlatList, Text, StyleSheet} from 'react-native';
 import PropTypes from 'prop-types';
 import {Navigation} from 'react-native-navigation';
 import {connect} from 'remx';
@@ -17,8 +17,8 @@ class PostsList extends Component {
     Navigation.events().bindComponent(this);
   }
 
-  componentDidMount() {
-    postsActions.fetchPosts();
+  async componentDidMount() {
+    await postsActions.fetchPosts();
   }
 
   static options() {
@@ -76,14 +76,15 @@ class PostsList extends Component {
     });
   }
 
+  renderItem = ({item}) => <Text>{item.title}</Text>;
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.text} onPress={this.pushViewPostScreen}>
-          PostsList Screen
-        </Text>
-        <Text>{JSON.stringify(this.props.posts)}</Text>
-      </View>
+      <FlatList
+        data={this.props.posts}
+        renderItem={this.renderItem}
+        keyExtractor={item => item.id}
+      />
     );
   }
 }

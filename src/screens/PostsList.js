@@ -47,6 +47,7 @@ class PostsList extends Component {
     Navigation.push(this.props.componentId, {
       component: {
         name: 'ViewPost',
+        passProps: {item},
         options: {
           topBar: {
             title: {

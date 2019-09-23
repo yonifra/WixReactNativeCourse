@@ -13,6 +13,34 @@
             "text": "It is one of the blessings of old friends that you can afford to be stupid with them.",
             "author": "Post 2 text",
             "img": "http://picsum.photos/200/200/?image=2"
+        },
+        {
+            "id": 3,
+            "title": "Post 3",
+            "text": "Scientists have developed catalysts that can convert carbon dioxide – the main cause of global warming – into plastics, fabrics, resins and other products. The discovery, based on the chemistry of artificial photosynthesis, is detailed in the journal Energy & Environmental Science.",
+            "author": "Post 3 text",
+            "img": "http://picsum.photos/200/200/?image=1"
+        },
+        {
+            "id": 4,
+            "title": "Post 4",
+            "text": "It is one of the blessings of old friends that you can afford to be stupid with them.",
+            "author": "Post 4 text",
+            "img": "http://picsum.photos/200/200/?image=2"
+        },
+        {
+            "id": 5,
+            "title": "Post 5",
+            "text": "Scientists have developed catalysts that can convert carbon dioxide – the main cause of global warming – into plastics, fabrics, resins and other products. The discovery, based on the chemistry of artificial photosynthesis, is detailed in the journal Energy & Environmental Science.",
+            "author": "Post 5 text",
+            "img": "http://picsum.photos/200/200/?image=1"
+        },
+        {
+            "id": 6,
+            "title": "Post 6",
+            "text": "It is one of the blessings of old friends that you can afford to be stupid with them.",
+            "author": "Post 6 text",
+            "img": "http://picsum.photos/200/200/?image=2"
         }
     ]
 }

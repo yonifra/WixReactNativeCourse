@@ -1,5 +1,11 @@
 import React, {Component} from 'react';
-import {FlatList, Text, StyleSheet} from 'react-native';
+import {
+  FlatList,
+  Text,
+  StyleSheet,
+  TouchableHighlight,
+  View,
+} from 'react-native';
 import PropTypes from 'prop-types';
 import {Navigation} from 'react-native-navigation';
 import {connect} from 'remx';
@@ -34,14 +40,14 @@ class PostsList extends Component {
     };
   }
 
-  pushViewPostScreen() {
+  pushViewPostScreen(item) {
     Navigation.push(this.props.componentId, {
       component: {
         name: 'ViewPost',
         options: {
           topBar: {
             title: {
-              text: 'View Post',
+              text: item.title,
             },
           },
         },
@@ -76,7 +82,11 @@ class PostsList extends Component {
     });
   }
 
-  renderItem = ({item}) => <Text>{item.title}</Text>;
+  renderItem = ({item}) => (
+    <TouchableHighlight onPress={() => this.pushViewPostScreen(item)}>
+      <Text>{item.title}</Text>
+    </TouchableHighlight>
+  );
 
   render() {
     return (

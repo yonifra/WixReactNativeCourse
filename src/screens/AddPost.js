@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, TextInput} from 'react-native';
+import {StyleSheet} from 'react-native';
+import {TextField, View} from 'react-native-ui-lib';
 import {Navigation} from 'react-native-navigation';
 import {postsStore} from '../posts.store';
+
+const INPUT_SPACING = 10;
 
 class AddPost extends Component {
   constructor(props) {
@@ -64,15 +67,24 @@ class AddPost extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.text}>AddPost Screen</Text>
-        <TextInput
-          style={{height: 40, width: 300, borderColor: 'gray', borderWidth: 1}}
-          placeholder={'title'}
+      <View flex style={{margin: 20}}>
+        <TextField
+          text70
+          containerStyle={{marginBottom: INPUT_SPACING}}
+          floatingPlaceholder
+          placeholder="Write your title..."
+          helperText="Blog title"
+          maxLength={100}
           onChangeText={this.onTitleChange}
         />
-        <TextInput
-          placeholder="Post text"
+
+        <TextField
+          text70
+          containerStyle={{marginBottom: INPUT_SPACING}}
+          floatingPlaceholder
+          multiline
+          placeholder="Some content..."
+          helperText="Your blog content"
           value={this.state.text}
           onChangeText={this.onTextChange}
         />
@@ -96,7 +108,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#D3EDFF',
+    backgroundColor: '#FFFFFF',
   },
   text: {
     fontSize: 28,

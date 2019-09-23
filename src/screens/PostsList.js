@@ -3,6 +3,28 @@ import {View, Text, StyleSheet} from 'react-native';
 import {Navigation} from 'react-native-navigation';
 
 class PostsList extends Component {
+  //   static propTypes = {
+  //     componentId: PropTypes.string,
+  //   };
+
+  constructor(props) {
+    super(props);
+    Navigation.events().bindComponent(this);
+  }
+
+  static options() {
+    return {
+      topBar: {
+        rightButtons: [
+          {
+            id: 'addPost',
+            text: 'Add',
+          },
+        ],
+      },
+    };
+  }
+
   pushViewPostScreen = () => {
     Navigation.push(this.props.componentId, {
       component: {
@@ -17,6 +39,33 @@ class PostsList extends Component {
             },
           },
         },
+      },
+    });
+  };
+
+  navigationButtonPressed({buttonId}) {
+    if (buttonId === 'addPost') {
+      this.openAddPostModal();;
+    }
+  }
+
+  openAddPostModal = () => {
+    Navigation.showModal({
+      stack: {
+        children: [
+          {
+            component: {
+              name: 'AddPost',
+              options: {
+                topBar: {
+                  title: {
+                    text: 'Modal',
+                  },
+                },
+              },
+            },
+          },
+        ],
       },
     });
   };

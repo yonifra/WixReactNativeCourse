@@ -107,18 +107,20 @@ class PostsList extends Component {
             middle
             column
             containerStyle={[styles.border, {paddingRight: 17}]}>
-            <ListItem.Part containerStyle={{marginBottom: 3}}>
-              <Text
-                dark10
-                text70
-                style={{flex: 1, marginRight: 10}}
-                numberOfLines={1}>
-                {item.title}
-              </Text>
-              <Text dark10 text70 style={{marginTop: 2}}>
-                {item.text}
-              </Text>
-            </ListItem.Part>
+            <Text
+              dark30
+              text90
+              style={{flex: 1, marginRight: 10, marginTop: 5}}
+              numberOfLines={1}>
+              {item.title}
+            </Text>
+            <Text
+              dark10
+              text70
+              style={{marginTop: 2, marginBottom: 5}}
+              numberOfLines={2}>
+              {item.text}
+            </Text>
           </ListItem.Part>
         </ListItem>
       </Animatable.View>

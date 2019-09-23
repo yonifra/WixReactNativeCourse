@@ -11,13 +11,13 @@ class AddPost extends Component {
   static options() {
     return {
       topBar: {
-        rightButtons: [
+        leftButtons: [
           {
             id: 'save',
             text: 'Save',
           },
         ],
-        leftButtons: [
+        rightButtons: [
           {
             id: 'cancel',
             text: 'Cancel',

@@ -45,7 +45,7 @@ class PostsList extends Component {
 
   navigationButtonPressed({buttonId}) {
     if (buttonId === 'addPost') {
-      this.openAddPostModal();;
+      this.openAddPostModal();
     }
   }
 
@@ -59,7 +59,7 @@ class PostsList extends Component {
               options: {
                 topBar: {
                   title: {
-                    text: 'Modal',
+                    text: 'Add Post Modal',
                   },
                 },
               },

@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
-import {
-  FlatList,
-  Text,
-  StyleSheet,
-  TouchableHighlight,
-  View,
-} from 'react-native';
+import {FlatList, StyleSheet} from 'react-native';
 import PropTypes from 'prop-types';
+import * as Animatable from 'react-native-animatable';
 import {Navigation} from 'react-native-navigation';
+import {
+  AnimatableManager,
+  ListItem,
+  Colors,
+  Text,
+  ThemeManager,
+  BorderRadiuses,
+} from 'react-native-ui-lib';
 import {connect} from 'remx';
 import {postsStore} from '../posts.store';
 import * as postsActions from '../posts.actions';
@@ -82,17 +85,51 @@ class PostsList extends Component {
     });
   }
 
-  renderItem = ({item}) => (
-    <TouchableHighlight onPress={() => this.pushViewPostScreen(item)}>
-      <Text>{item.title}</Text>
-    </TouchableHighlight>
-  );
+  renderRow(item, id) {
+    const animationProps = AnimatableManager.presets.fadeInRight;
+    const imageAnimationProps = AnimatableManager.getRandomDelay();
+
+    return (
+      <Animatable.View {...animationProps}>
+        <ListItem
+          activeBackgroundColor={Colors.dark60}
+          activeOpacity={0.3}
+          height={77.5}
+          onPress={() => this.pushViewPostScreen(item)}>
+          <ListItem.Part left>
+            <Animatable.Image
+              source={{uri: item.img}}
+              style={styles.image}
+              {...imageAnimationProps}
+            />
+          </ListItem.Part>
+          <ListItem.Part
+            middle
+            column
+            containerStyle={[styles.border, {paddingRight: 17}]}>
+            <ListItem.Part containerStyle={{marginBottom: 3}}>
+              <Text
+                dark10
+                text70
+                style={{flex: 1, marginRight: 10}}
+                numberOfLines={1}>
+                {item.title}
+              </Text>
+              <Text dark10 text70 style={{marginTop: 2}}>
+                {item.text}
+              </Text>
+            </ListItem.Part>
+          </ListItem.Part>
+        </ListItem>
+      </Animatable.View>
+    );
+  }
 
   render() {
     return (
       <FlatList
         data={this.props.posts}
-        renderItem={this.renderItem}
+        renderItem={({item, index}) => this.renderRow(item, index)}
         keyExtractor={item => item.id}
       />
     );
@@ -118,5 +155,15 @@ const styles = StyleSheet.create({
     fontSize: 28,
     textAlign: 'center',
     margin: 10,
+  },
+  image: {
+    width: 54,
+    height: 54,
+    borderRadius: BorderRadiuses.br20,
+    marginHorizontal: 14,
+  },
+  border: {
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderColor: ThemeManager.dividerColor,
   },
 });

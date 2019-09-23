@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, TextInput} from 'react-native';
 import {Navigation} from 'react-native-navigation';
+import {postsStore} from '../posts.store';
 
 class AddPost extends Component {
   constructor(props) {
@@ -47,14 +48,33 @@ class AddPost extends Component {
     });
   };
 
+  onTextChange = text => {
+    this.setState({text});
+  };
+
+  onSavePressed = () => {
+    Navigation.dismissModal(this.props.componentId);
+    const randomImageNumber = Math.floor(Math.random() * 500 + 1);
+    postsStore.addPost({
+      title: this.state.title,
+      text: this.state.text,
+      img: `https://picsum.photos/200/200/?image=${randomImageNumber}`,
+    });
+  };
+
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.text}>AddPost Screen</Text>
         <TextInput
-          style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+          style={{height: 40, width: 300, borderColor: 'gray', borderWidth: 1}}
           placeholder={'title'}
           onChangeText={this.onTitleChange}
+        />
+        <TextInput
+          placeholder="Post text"
+          value={this.state.text}
+          onChangeText={this.onTextChange}
         />
       </View>
     );
@@ -62,7 +82,7 @@ class AddPost extends Component {
 
   navigationButtonPressed({buttonId}) {
     if (buttonId === 'save') {
-      Navigation.dismissModal(this.props.componentId);
+      this.onSavePressed();
     } else if (buttonId === 'cancel') {
       Navigation.dismissModal(this.props.componentId);
     }

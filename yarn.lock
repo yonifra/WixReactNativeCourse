@@ -836,6 +836,13 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@react-native-community/blur@^3.3.1":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/blur/-/blur-3.6.0.tgz#31c9e0f2770519c9b5c4f99418f192246f0d4db8"
+  integrity sha512-GtDBhpX2pQcjl4VopOC8FktrVufrEfYRwVeMQ2WWckqKIv2BdwvlvWvj88L1WmEdBr9UNcm3rtgz+d+YXkmirA==
+  dependencies:
+    prop-types "^15.5.10"
+
 "@react-native-community/cli-platform-android@^2.6.0", "@react-native-community/cli-platform-android@^2.9.0":
   version "2.9.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@react-native-community/cli-platform-android/-/cli-platform-android-2.9.0.tgz#28831e61ce565a2c7d1905852fce1eecfd33cb5e"
@@ -1245,6 +1252,13 @@ arr-union@^3.1.0:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/arr-union/-/arr-union-3.1.0.tgz#e39b09aea9def866a8f206e288af63919bae39c4"
   integrity sha1-45sJrqne+Gao8gbiiK9jkZuuOcQ=
 
+array-back@^1.0.3, array-back@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/array-back/-/array-back-1.0.4.tgz#644ba7f095f7ffcf7c43b5f0dc39d3c1f03c063b"
+  integrity sha1-ZEun8JX3/898Q7Xw3DnTwfA8Bjs=
+  dependencies:
+    typical "^2.6.0"
+
 array-equal@^1.0.0:
   version "1.0.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
@@ -1401,6 +1415,11 @@ babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-7.0.0-beta.0.tgz#aa213c1435e2bffeb6fca842287ef534ad05d5cf"
   integrity sha1-qiE8FDXiv/62/KhCKH71NK0F1c8=
 
+babel-plugin-transform-inline-environment-variables@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-inline-environment-variables/-/babel-plugin-transform-inline-environment-variables-0.0.2.tgz#1372475c6c87f3c4ce6046587730ee041bc784b9"
+  integrity sha1-E3JHXGyH88TOYEZYdzDuBBvHhLk=
+
 babel-preset-fbjs@^3.1.2, babel-preset-fbjs@^3.2.0:
   version "3.2.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/babel-preset-fbjs/-/babel-preset-fbjs-3.2.0.tgz#c0e6347d3e0379ed84b3c2434d3467567aa05297"
@@ -1447,10 +1466,10 @@ balanced-match@^1.0.0:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
-base64-js@^1.1.2, base64-js@^1.2.3:
-  version "1.3.1"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/base64-js/-/base64-js-1.3.1.tgz#58ece8cb75dd07e71ed08c736abc5fac4dbf8df1"
-  integrity sha1-WOzoy3XdB+ce0IxzarxfrE2/jfE=
+base64-js@^1.1.2, base64-js@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
 base@^0.11.1:
   version "0.11.2"
@@ -1483,6 +1502,21 @@ big-integer@^1.6.7:
   version "1.6.45"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/big-integer/-/big-integer-1.6.45.tgz#1bf2fa1271bfd20d4c52c3d6c6f08cab8d91c77e"
   integrity sha1-G/L6EnG/0g1MUsPWxvCMq42Rx34=
+
+bower-auto-release@^1.1.358:
+  version "1.1.358"
+  resolved "https://registry.yarnpkg.com/bower-auto-release/-/bower-auto-release-1.1.358.tgz#578f8ce3dc2f62f0b54380814266ff8717775bc1"
+  integrity sha512-uWpR29K93+Ue3UJJPiVH9Q3L5+kpAQN7LlB8zdQe0unvVn4sTIIzrdSYkuIml55TEvSFewtov6OB3jmpAY4jsQ==
+  dependencies:
+    bower "^1.7.9"
+    command-line-args "^3.0.0"
+  optionalDependencies:
+    wnpm-ci "*"
+
+bower@^1.7.9:
+  version "1.8.13"
+  resolved "https://registry.yarnpkg.com/bower/-/bower-1.8.13.tgz#5892f391f47134db88ea93d4c91a31f09792dc58"
+  integrity sha512-8eWko16JlCTdaZZG70kddHPed17pHEbH8/IjfP4IFkQsfEqRsyNM09Dc8cDBFkSvtQ/2lTea7A+bMhRggG2a+Q==
 
 bplist-creator@0.0.7:
   version "0.0.7"
@@ -1755,7 +1789,7 @@ collection-visit@^1.0.0:
     map-visit "^1.0.0"
     object-visit "^1.0.0"
 
-color-convert@^1.9.0:
+color-convert@^1.9.0, color-convert@^1.9.3:
   version "1.9.3"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
   integrity sha1-u3GFBpDh8TZWfeYp0tVHHe2kweg=
@@ -1767,10 +1801,31 @@ color-name@1.1.3:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
+color-name@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
+  integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+color-string@^1.6.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.9.0.tgz#63b6ebd1bec11999d1df3a79a7569451ac2be8aa"
+  integrity sha512-9Mrz2AQLefkH1UvASKj6v6hj/7eWgjnT/cVsR8CumieLoT+g900exWeNogqtweI8dxloXN9BDQTYro1oWu/5CQ==
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
 color-support@^1.1.3:
   version "1.1.3"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/color-support/-/color-support-1.1.3.tgz#93834379a1cc9a0c61f82f52f0d04322251bd5a2"
   integrity sha1-k4NDeaHMmgxh+C9S8NBDIiUb1aI=
+
+color@^3.1.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/color/-/color-3.2.1.tgz#3544dc198caf4490c3ecc9a790b54fe9ff45e164"
+  integrity sha512-aBl7dZI9ENN6fUGC7mWpMTPNHmWUSNan9tuWN6ahh5ZLNk9baLJOnSMlrQkHcrfFgz2/RigjUVAjdx36VcemKA==
+  dependencies:
+    color-convert "^1.9.3"
+    color-string "^1.6.0"
 
 colorette@^1.0.7:
   version "1.1.0"
@@ -1783,6 +1838,16 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   integrity sha1-w9RaizT9cwYxoRCoolIGgrMdWn8=
   dependencies:
     delayed-stream "~1.0.0"
+
+command-line-args@^3.0.0:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/command-line-args/-/command-line-args-3.0.5.tgz#5bd4ad45e7983e5c1344918e40280ee2693c5ac0"
+  integrity sha1-W9StReeYPlwTRJGOQCgO4mk8WsA=
+  dependencies:
+    array-back "^1.0.4"
+    feature-detect-es6 "^1.3.1"
+    find-replace "^1.0.2"
+    typical "^2.6.0"
 
 commander@^2.19.0, commander@~2.20.0:
   version "2.20.0"
@@ -1798,6 +1863,16 @@ commondir@^1.0.1:
   version "1.0.1"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
+
+commons-validator-js@^1.0.237:
+  version "1.0.1668"
+  resolved "https://registry.yarnpkg.com/commons-validator-js/-/commons-validator-js-1.0.1668.tgz#8b00d1c2878084cd495e0ac29d73567f33677295"
+  integrity sha512-zGSjqN958s9P9nFyK0qs8ipKnh+g+DFMpcnz7BajJrzsPDd8KdbyfostuZiT1l6Vm/WxiMHTxAzWFLGiMRpUCA==
+  dependencies:
+    bower-auto-release "^1.1.358"
+    lodash.includes "^4.3.0"
+    punycode "^1.4.1"
+    wnpm-ci "^8.0.131"
 
 component-emitter@^1.2.1:
   version "1.3.0"
@@ -1927,6 +2002,15 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     semver "^5.5.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
+
+cross-spawn@^7.0.0:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
+  integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
+  dependencies:
+    path-key "^3.1.0"
+    shebang-command "^2.0.0"
+    which "^2.0.1"
 
 cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   version "0.3.8"
@@ -2458,6 +2542,21 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+execa@^2.0.3:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-2.1.0.tgz#e5d3ecd837d2a60ec50f3da78fd39767747bbe99"
+  integrity sha512-Y/URAVapfbYy2Xp/gb6A0E7iR8xeqOCXsuuaoMn7A5PzrXUK84E1gyiEfq0wQd/GHA6GsoHWwhNq8anb0mleIw==
+  dependencies:
+    cross-spawn "^7.0.0"
+    get-stream "^5.0.0"
+    is-stream "^2.0.0"
+    merge-stream "^2.0.0"
+    npm-run-path "^3.0.0"
+    onetime "^5.1.0"
+    p-finally "^2.0.0"
+    signal-exit "^3.0.2"
+    strip-final-newline "^2.0.0"
+
 exit@^0.1.2:
   version "0.1.2"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
@@ -2642,6 +2741,13 @@ fbjs@^1.0.0:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.18"
 
+feature-detect-es6@^1.3.1:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/feature-detect-es6/-/feature-detect-es6-1.5.0.tgz#a69bb7662c65f64f89f07eac5a461b649a1e0a00"
+  integrity sha512-DzWPIGzTnfp3/KK1d/YPfmgLqeDju9F2DQYBL35VusgSApcA7XGqVtXfR4ETOOFEzdFJ3J7zh0Gkk011TiA4uQ==
+  dependencies:
+    array-back "^1.0.4"
+
 figures@^2.0.0:
   version "2.0.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
@@ -2687,6 +2793,14 @@ find-cache-dir@^2.0.0:
     commondir "^1.0.1"
     make-dir "^2.0.0"
     pkg-dir "^3.0.0"
+
+find-replace@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/find-replace/-/find-replace-1.0.3.tgz#b88e7364d2d9c959559f388c66670d6130441fa0"
+  integrity sha1-uI5zZNLZyVlVnziMZmcNYTBEH6A=
+  dependencies:
+    array-back "^1.0.4"
+    test-value "^2.1.0"
 
 find-up@^2.0.0:
   version "2.1.0"
@@ -2772,6 +2886,15 @@ fs-extra@^7.0.1:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
+fs-extra@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
+  integrity sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs-minipass@^1.2.5:
   version "1.2.7"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/fs-minipass/-/fs-minipass-1.2.7.tgz#ccff8570841e7fe4265693da88936c55aed7f7c7"
@@ -2838,6 +2961,13 @@ get-stream@^4.0.0:
   dependencies:
     pump "^3.0.0"
 
+get-stream@^5.0.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-5.2.0.tgz#4966a1795ee5ace65e706c4b7beb71257d6e22d3"
+  integrity sha512-nBF+F1rAZVCu/p7rjzgA+Yb4lfYXrpl7a6VmJrU8wF9I1CKvP/QwPNZHnOlwbTkY6dvtFIzFMSyQXbLoTQPRpA==
+  dependencies:
+    pump "^3.0.0"
+
 get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
@@ -2886,6 +3016,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.3
   version "4.2.2"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/graceful-fs/-/graceful-fs-4.2.2.tgz#6f0952605d0140c1cfdb138ed005775b92d67b02"
   integrity sha1-bwlSYF0BQMHP2xOO0AV3W5LWewI=
+
+graceful-fs@^4.2.0:
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
+  integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
 
 growly@^1.3.0:
   version "1.3.0"
@@ -2982,10 +3117,22 @@ hermesvm@^0.1.0:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/hermesvm/-/hermesvm-0.1.1.tgz#bd1df92b4dc504e261c23df34864daf24b844d03"
   integrity sha1-vR35K03FBOJhwj3zSGTa8kuETQM=
 
+hoist-non-react-statics@2.x.x, hoist-non-react-statics@^2.3.1:
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+  integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
+
 hoist-non-react-statics@3.x.x:
   version "3.3.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
   integrity sha1-sJF48BIhhPuVrPUl2q7LTY9FlYs=
+  dependencies:
+    react-is "^16.7.0"
+
+hoist-non-react-statics@^3.0.0:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
   dependencies:
     react-is "^16.7.0"
 
@@ -3156,7 +3303,7 @@ inquirer@^6.4.1:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
-invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha1-YQ88ksk1nOHbYW5TgAjSP/NRWOY=
@@ -3191,6 +3338,11 @@ is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
   integrity sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=
+
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
+  integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
 
 is-buffer@^1.1.5:
   version "1.1.6"
@@ -3329,6 +3481,11 @@ is-stream@^1.0.1, is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
   integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
+
+is-stream@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-2.0.1.tgz#fac1e3d53b97ad5a9d0ae9cef2389f5810a5c077"
+  integrity sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==
 
 is-symbol@^1.0.2:
   version "1.0.2"
@@ -4053,6 +4210,11 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
+lodash.includes@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.includes/-/lodash.includes-4.3.0.tgz#60bb98a87cb923c68ca1e51325483314849f553f"
+  integrity sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8=
+
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
@@ -4072,6 +4234,11 @@ lodash@4.17.x, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.1
   version "4.17.15"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
+
+lodash@4.x.x, lodash@^4.0.0:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -4165,6 +4332,11 @@ mem@^4.0.0:
     map-age-cleaner "^0.1.1"
     mimic-fn "^2.0.0"
     p-is-promise "^2.0.0"
+
+memoize-one@^5.0.5:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
+  integrity sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==
 
 merge-stream@^1.0.1:
   version "1.0.1"
@@ -4514,7 +4686,7 @@ mimic-fn@^1.0.0:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
   integrity sha1-ggyGo5M0ZA6ZUWkovQP8qIBX0CI=
 
-mimic-fn@^2.0.0:
+mimic-fn@^2.0.0, mimic-fn@^2.1.0:
   version "2.1.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha1-ftLCzMyvhNP/y3pptXcR/CCDQBs=
@@ -4577,6 +4749,11 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+mobx@3.x.x:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.6.2.tgz#fb9f5ff5090539a1ad54e75dc4c098b602693320"
+  integrity sha512-Dq3boJFLpZEvuh5a/MbHLUIyN9XobKWIb0dBfkNOJffNkE3vtuY0C9kSDVpfH8BB0BPkVw8g22qCv7d05LEhKg==
 
 morgan@^1.9.0:
   version "1.9.1"
@@ -4762,6 +4939,13 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
+npm-run-path@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-3.1.0.tgz#7f91be317f6a466efed3c9f2980ad8a4ee8b0fa5"
+  integrity sha512-Dbl4A/VfiVGLgQv29URL9xshU8XDY1GeLy+fsaZ1AA8JDSfjvr5P5+pzRbWqRSBxk6/DW7MIh8lTM/PaGnP2kg==
+  dependencies:
+    path-key "^3.0.0"
+
 npmlog@^4.0.2:
   version "4.1.2"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/npmlog/-/npmlog-4.1.2.tgz#08a7f2a8bf734604779a9efa4ad5cc717abb954b"
@@ -4889,6 +5073,13 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+onetime@^5.1.0:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/onetime/-/onetime-5.1.2.tgz#d0e96ebb56b07476df1dd9c4806e5237985ca45e"
+  integrity sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==
+  dependencies:
+    mimic-fn "^2.1.0"
+
 open@^6.2.0:
   version "6.4.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/open/-/open-6.4.0.tgz#5c13e96d0dc894686164f18965ecfe889ecfc8a9"
@@ -4985,6 +5176,11 @@ p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
   integrity sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=
+
+p-finally@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-2.0.1.tgz#bd6fcaa9c559a096b680806f4d657b3f0f240561"
+  integrity sha512-vpm09aKwq6H9phqRQzecoDpD8TmVyGw70qmWlyq5onxY7tqyTTFVvxMykxQSQKILBSFlbXpypIw2T1Ml7+DDtw==
 
 p-is-promise@^2.0.0:
   version "2.1.0"
@@ -5113,6 +5309,11 @@ path-key@^2.0.0, path-key@^2.0.1:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/path-key/-/path-key-2.0.1.tgz#411cadb574c5a140d3a4b1910d40d80cc9f40b40"
   integrity sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
 
+path-key@^3.0.0, path-key@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/path-key/-/path-key-3.1.1.tgz#581f6ade658cbba65a0d3380de7753295054f375"
+  integrity sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
+
 path-parse@^1.0.6:
   version "1.0.6"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
@@ -5167,13 +5368,12 @@ pkg-dir@^3.0.0:
     find-up "^3.0.0"
 
 plist@^3.0.0, plist@^3.0.1:
-  version "3.0.1"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/plist/-/plist-3.0.1.tgz#a9b931d17c304e8912ef0ba3bdd6182baf2e1f8c"
-  integrity sha1-qbkx0XwwTokS7wujvdYYK68uH4w=
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.4.tgz#a62df837e3aed2bb3b735899d510c4f186019cbe"
+  integrity sha512-ksrr8y9+nXOxQB2osVNqrgvX/XQPOXaU4BQMKjYq8PvaY1U18mo+fKgBSwzK+luSyinOuPae956lSVcBwxlAMg==
   dependencies:
-    base64-js "^1.2.3"
+    base64-js "^1.5.1"
     xmlbuilder "^9.0.7"
-    xmldom "0.1.x"
 
 plugin-error@^0.1.2:
   version "0.1.2"
@@ -5260,6 +5460,15 @@ prop-types@15.x.x, prop-types@^15.6.2, prop-types@^15.7.2:
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
+prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.6.0:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.13.1"
+
 pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
@@ -5293,6 +5502,11 @@ qs@~6.5.2:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha1-yzroBuh0BERYTvFUzo7pjUA/PjY=
 
+querystringify@^2.1.1:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
+  integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
+
 range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
@@ -5321,6 +5535,11 @@ react-devtools-core@^3.6.1:
     shell-quote "^1.6.1"
     ws "^3.3.1"
 
+react-is@^16.13.1:
+  version "16.13.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
+  integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
 react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   version "16.9.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
@@ -5330,6 +5549,36 @@ react-lifecycles-compat@2.0.0:
   version "2.0.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/react-lifecycles-compat/-/react-lifecycles-compat-2.0.0.tgz#71d9c4cde47114c4102454f76da055c2bc48c948"
   integrity sha1-cdnEzeRxFMQQJFT3baBVwrxIyUg=
+
+react-native-animatable@^1.1.0:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.3.3.tgz#a13a4af8258e3bb14d0a9d839917e9bb9274ec8a"
+  integrity sha512-2ckIxZQAsvWn25Ho+DK3d1mXIgj7tITkrS4pYDvx96WyOttSvzzFeQnM2od0+FUMzILbdHDsDEqZvnz1DYNQ1w==
+  dependencies:
+    prop-types "^15.7.2"
+
+react-native-color@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/react-native-color/-/react-native-color-0.0.10.tgz#9cbc0da191c67ae4fc3a04bef7bc54a685784c7d"
+  integrity sha512-MrYIaWH/fiRXBhfJBVG7vtNF5cQQKg1rK16pU8xtlKne2Ipu+Inki1Gb/oFvaOu+zNXb5/6tss467k8zYIvMwA==
+  dependencies:
+    prop-types "^15.6.0"
+    react-native-slider "^0.11.0"
+    tinycolor2 "^1.4.1"
+
+react-native-gesture-handler@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.3.0.tgz#d0386f565928ccc1849537f03f2e37fd5f6ad43f"
+  integrity sha512-ASRFIXBuKRvqlmwkWJhV8yP2dTpvcqVrLNpd7FKVBFHYWr6SAxjGyO9Ik8w1lAxDhMlRP2IcJ9p9eq5X2WWeLQ==
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+    invariant "^2.2.2"
+    prop-types "^15.5.10"
+
+react-native-interactable@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-interactable/-/react-native-interactable-1.0.0.tgz#b6dcdff9ec61dfae9233e46e1d673ce8480a4f64"
+  integrity sha512-e/GyydV3nFWVL36frdM8H+wGxy5pJu0WjlN6dgtBIRCaGz7nLbCRWFINs7SRwIaI9LPXVAqEXQTOc2d5LJN4HA==
 
 react-native-navigation@^2.27.9:
   version "2.27.9"
@@ -5341,6 +5590,45 @@ react-native-navigation@^2.27.9:
     prop-types "15.x.x"
     react-lifecycles-compat "2.0.0"
     tslib "1.9.3"
+
+react-native-reanimated@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.1.0.tgz#ba6864055ec3a206cdd5209a293fe653ce276206"
+  integrity sha512-UGDVNfvuIkMqYUx6aytSzihuzv6sWubn0MQi8dRcw7BjgezhjJnVnJ/NSOcpL3cO+Ld7lFcRX6GKcskwkHdPkw==
+
+react-native-slider@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/react-native-slider/-/react-native-slider-0.11.0.tgz#b68a0bc43c8422b24cd57947cc5ac2bcdb58fadc"
+  integrity sha512-jV9K87eu9uWr0uJIyrSpBLnCKvVlOySC2wynq9TFCdV9oGgjt7Niq8Q1A8R8v+5GHsuBw/s8vEj1AAkkUi+u+w==
+  dependencies:
+    prop-types "^15.5.6"
+
+react-native-text-size@^2.0.4:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-text-size/-/react-native-text-size-2.1.1.tgz#e26823c4504576964acc258db44009df81189332"
+  integrity sha512-dkzmfFiKY4iwk73cvgrbUZ5HFB8ZdOFErRVhDWKBNxML/59dDkzTITBaZ8GKwsfGxNHKOXdHD2JdOoPRwAE+yQ==
+
+react-native-ui-lib@^3.38.3:
+  version "3.41.0"
+  resolved "https://registry.yarnpkg.com/react-native-ui-lib/-/react-native-ui-lib-3.41.0.tgz#200ed4dd3c9a487aa0a81688c7e78556b48fe567"
+  integrity sha512-3DP0J7MnHdTpL2yk77NowLfSUn1Rj0dR56QsRKgH5wUuknU8eZ0Jmn3CNQFlYlxhVLoIUOzNJpA2ghPdnm+tqQ==
+  dependencies:
+    "@react-native-community/blur" "^3.3.1"
+    babel-plugin-transform-inline-environment-variables "^0.0.2"
+    color "^3.1.0"
+    commons-validator-js "^1.0.237"
+    hoist-non-react-statics "^3.0.0"
+    lodash "^4.0.0"
+    memoize-one "^5.0.5"
+    prop-types "^15.5.10"
+    react-native-animatable "^1.1.0"
+    react-native-color "0.0.10"
+    react-native-gesture-handler "1.3.0"
+    react-native-interactable "1.0.0"
+    react-native-reanimated "1.1.0"
+    react-native-text-size "^2.0.4"
+    semver "^5.5.0"
+    url-parse "^1.2.0"
 
 react-native@0.60.5:
   version "0.60.5"
@@ -5537,6 +5825,16 @@ remove-trailing-separator@^1.0.1:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
   integrity sha1-wkvOKig62tW8P1jg1IJJuSN52O8=
 
+remx@^2.0.58:
+  version "2.0.61"
+  resolved "https://registry.yarnpkg.com/remx/-/remx-2.0.61.tgz#df6c5dbd918e15b91252b1868d61218e74e1de6b"
+  integrity sha512-e6EmX840Al/Rl9tJe3xf9gOzK3PkuEw/CUiPqZAnxI7ZEcTiAozqK5Rrf8hvxNMQY1Wvzji53hXYGsJ0IQg1bw==
+  dependencies:
+    hoist-non-react-statics "2.x.x"
+    lodash "4.x.x"
+    mobx "3.x.x"
+    snyk "^1.192.3"
+
 repeat-element@^1.1.2:
   version "1.1.3"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/repeat-element/-/repeat-element-1.1.3.tgz#782e0d825c0c5a3bb39731f84efee6b742e6b1ce"
@@ -5603,6 +5901,11 @@ require-main-filename@^2.0.0:
   version "2.0.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
   integrity sha1-0LMp7MfMD2Fkn2IhW+aa9UqomJs=
+
+requires-port@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+  integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
 resolve-cwd@^2.0.0:
   version "2.0.0"
@@ -5773,7 +6076,7 @@ scheduler@^0.13.6:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-"semver@2 || 3 || 4 || 5", semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
+"semver@2 || 3 || 4 || 5", semver@^5.0.3, semver@^5.1.0, semver@^5.2.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
   version "5.7.1"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha1-qVT5Ma66UI0we78Gnv8MAclhFvc=
@@ -5862,10 +6165,22 @@ shebang-command@^1.2.0:
   dependencies:
     shebang-regex "^1.0.0"
 
+shebang-command@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"
+  integrity sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==
+  dependencies:
+    shebang-regex "^3.0.0"
+
 shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
+
+shebang-regex@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
+  integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
 shell-quote@1.6.1:
   version "1.6.1"
@@ -5900,6 +6215,13 @@ simple-plist@^1.0.0:
     bplist-creator "0.0.7"
     bplist-parser "0.1.1"
     plist "^3.0.1"
+
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
+  dependencies:
+    is-arrayish "^0.3.1"
 
 sisteransi@^1.0.3:
   version "1.0.3"
@@ -5966,6 +6288,11 @@ snapdragon@^0.8.1:
     source-map "^0.5.6"
     source-map-resolve "^0.5.0"
     use "^3.1.0"
+
+snyk@^1.192.3:
+  version "1.859.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.859.0.tgz#b609355c92bf064b0427625cc62b13048f97b985"
+  integrity sha512-myHCj1zbTV95ZfR+oVZRrOYJ65woMciR9tOVH+lVjZUs58kruH24bLiqxrd89BBLs+46PzowrOkFtJkdXNxuOg==
 
 source-map-resolve@^0.5.0:
   version "0.5.2"
@@ -6177,6 +6504,11 @@ strip-eof@^1.0.0:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/strip-eof/-/strip-eof-1.0.0.tgz#bb43ff5598a6eb05d89b59fcd129c983313606bf"
   integrity sha1-u0P/VZim6wXYm1n80SnJgzE2Br8=
 
+strip-final-newline@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/strip-final-newline/-/strip-final-newline-2.0.0.tgz#89b852fb2fcbe936f6f4b3187afb0a12c1ab58ad"
+  integrity sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==
+
 strip-json-comments@^3.0.1:
   version "3.0.1"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/strip-json-comments/-/strip-json-comments-3.0.1.tgz#85713975a91fb87bf1b305cca77395e40d2a64a7"
@@ -6260,6 +6592,14 @@ test-exclude@^5.2.3:
     read-pkg-up "^4.0.0"
     require-main-filename "^2.0.0"
 
+test-value@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/test-value/-/test-value-2.1.0.tgz#11da6ff670f3471a73b625ca4f3fdcf7bb748291"
+  integrity sha1-Edpv9nDzRxpztiXKTz/c97t0gpE=
+  dependencies:
+    array-back "^1.0.3"
+    typical "^2.6.0"
+
 text-table@^0.2.0:
   version "0.2.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
@@ -6287,6 +6627,11 @@ time-stamp@^1.0.0:
   version "1.1.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/time-stamp/-/time-stamp-1.1.0.tgz#764a5a11af50561921b133f3b44e618687e0f5c3"
   integrity sha1-dkpaEa9QVhkhsTPztE5hhofg9cM=
+
+tinycolor2@^1.4.1:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
+  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
 
 title-case@^2.1.0:
   version "2.1.1"
@@ -6417,6 +6762,11 @@ typedarray@^0.0.6:
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typical@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/typical/-/typical-2.6.1.tgz#5c080e5d661cbbe38259d2e70a3c7253e873881d"
+  integrity sha1-XAgOXWYcu+OCWdLnCjxyU+hziB0=
+
 ua-parser-js@^0.7.18:
   version "0.7.20"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
@@ -6522,6 +6872,14 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+url-parse@^1.2.0:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.10.tgz#9d3c2f736c1d75dd3bd2be507dcc111f1e2ea9c1"
+  integrity sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==
+  dependencies:
+    querystringify "^2.1.1"
+    requires-port "^1.0.0"
 
 use@^3.1.0:
   version "3.1.1"
@@ -6656,12 +7014,30 @@ which@^1.2.9, which@^1.3.0:
   dependencies:
     isexe "^2.0.0"
 
+which@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/which/-/which-2.0.2.tgz#7c6a8dd0a636a0327e10b59c9286eee93f3f51b1"
+  integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
+  dependencies:
+    isexe "^2.0.0"
+
 wide-align@^1.1.0:
   version "1.1.3"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/wide-align/-/wide-align-1.1.3.tgz#ae074e6bdc0c14a431e804e624549c633b000457"
   integrity sha1-rgdOa9wMFKQx6ATmJFScYzsABFc=
   dependencies:
     string-width "^1.0.2 || 2"
+
+wnpm-ci@*, wnpm-ci@^8.0.131:
+  version "8.0.131"
+  resolved "https://registry.yarnpkg.com/wnpm-ci/-/wnpm-ci-8.0.131.tgz#06455f58ba13b6b52942091d49672cfdc265140b"
+  integrity sha512-mC+8NQOleSlx7KPj939eRXNkXzOOPL6R62nX/fb+6TbFd2TXXTdriPQxW9HlpjJ3bnp8nsaezBRlJovJwWSNPg==
+  dependencies:
+    execa "^2.0.3"
+    fs-extra "^8.1.0"
+    mkdirp "^0.5.1"
+    semver "^5.2.0"
+    tmp "^0.0.33"
 
 wordwrap@^1.0.0, wordwrap@~1.0.0:
   version "1.0.0"
@@ -6759,7 +7135,7 @@ xml-name-validator@^3.0.0:
 
 xmlbuilder@^9.0.7:
   version "9.0.7"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
   integrity sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
 
 xmldoc@^1.1.2:
@@ -6768,11 +7144,6 @@ xmldoc@^1.1.2:
   integrity sha1-ZmbgKf4lRw1ZnNMOI/8NHtUEZtc=
   dependencies:
     sax "^1.2.1"
-
-xmldom@0.1.x:
-  version "0.1.27"
-  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/xmldom/-/xmldom-0.1.27.tgz#d501f97b3bdb403af8ef9ecc20573187aadac0e9"
-  integrity sha1-1QH5ezvbQDr4757MIFcxh6rawOk=
 
 xpipe@^1.0.5:
   version "1.0.5"
